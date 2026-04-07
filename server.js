@@ -14,6 +14,6 @@ connectDB();
 
 app.use("/v1/notification", notificationRoutes);
 
-app.listen(3001, () => {
-    console.log("Server running on port 3001");
+app.listen(process.env.PORT, () => {
+    console.log(`server running on ${process.env.PORT}`);
 });

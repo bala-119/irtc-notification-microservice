@@ -18,5 +18,13 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "description": ""
+  "description": "\"# irtc-notification-service\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bala-119/irtc-notification-microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bala-119/irtc-notification-microservice/issues"
+  },
+  "homepage": "https://github.com/bala-119/irtc-notification-microservice#readme"
 }
