@@ -8,7 +8,10 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://bala-119.github.io',
+  credentials: true
+}));
 app.use(express.json());
 
 // connect MongoDB
@@ -16,6 +19,8 @@ connectDB();
 
 app.use("/v1/notification", notificationRoutes);
 
-app.listen(process.env.PORT, () => {
-    console.log(`server running on ${process.env.PORT}`);
+const PORT = process.env.PORT || 3002;
+
+app.listen(PORT, () => {
+    console.log(`server running on ${PORT}`);
 });
